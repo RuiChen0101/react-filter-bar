@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import 'react-filter-bar/dist/css/ReactFilterBar.min.css';
+import '@ruichen0101/react-filter-bar/dist/css/ReactFilterBar.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

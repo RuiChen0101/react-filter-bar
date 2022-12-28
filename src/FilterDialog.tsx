@@ -61,7 +61,7 @@ class FilterDialog extends Component<FilterDialogProp>{
                         className="filter-bar--btn"
                         onClick={this.props.onApply}
                     >
-                        套用
+                        apply
                     </button>
                 </div>
             </div>

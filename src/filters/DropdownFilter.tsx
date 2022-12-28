@@ -43,7 +43,7 @@ class DropdownFilter extends Component<DropdownFilterProp>{
             >
                 <div className="dropdown-filter--body">
                     <select onChange={(e) => this._onChange(e.target.value)}>
-                        <option >選擇選項...</option>
+                        <option >options...</option>
                         {
                             (this.props.setting.options ?? []).map((opt: FilterOption, index: number) => {
                                 return (

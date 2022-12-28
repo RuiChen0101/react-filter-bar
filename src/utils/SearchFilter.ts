@@ -35,10 +35,10 @@ const buildFilterText = (setting: FilterSetting[], item: FilterItem): string => 
 
     switch (item.comparator ?? FilterComparator.equal) {
         case FilterComparator.equal:
-            text.push('等於');
+            text.push('equal');
             break;
         default:
-            text.push('包含');
+            text.push('include');
             break
     }
 

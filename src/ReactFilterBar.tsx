@@ -150,7 +150,7 @@ class ReactFilterBar extends Component<FilterBarProp, FilterBarState> {
                 </div>
                 {
                     this.state.filterItems.length === 0 ?
-                        <span className="filter-bar--filter-text">過濾器</span> :
+                        <span className="filter-bar--filter-text">filters</span> :
                         this.state.filterItems.map(
                             (item: FilterItem) => {
                                 const h = hash(item);

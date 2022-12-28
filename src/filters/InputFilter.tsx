@@ -37,8 +37,8 @@ class InputFilter extends Component<InputFilterProp> {
             >
                 <div className="input-filter--body">
                     <div className="text-start">
-                        <label>{type === FilterType.inputLike ? "包含" : "等於"}</label>
-                        <input placeholder="值" onChange={(e) => this._value = e.target.value} />
+                        <label>{type === FilterType.inputLike ? "include" : "equal"}</label>
+                        <input placeholder="value" onChange={(e) => this._value = e.target.value} />
                     </div>
                 </div>
             </FilterDialog>
