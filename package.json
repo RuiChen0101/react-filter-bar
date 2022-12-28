@@ -1,0 +1,50 @@
+{
+  "name": "react-filter-bar",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc --build --clean && tsc && tsc --module commonjs --outDir dist/ && npm run build:scss",
+    "build:scss": "sass --no-source-map --style=compressed src/ReactFilterBar.scss:dist/css/ReactFilterBar.min.css"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "ui",
+    "filter",
+    "search"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/esm/index.js"
+    },
+    "./dist/css/ReactFilterBar.min.css": "./dist/css/ReactFilterBar.min.css"
+  },
+  "author": "RuiChen",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@types/react": "^18.0.25",
+    "object-hash": "^3.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.56.1",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RuiChen0101/react-filter-bar.git"
+  },
+  "devDependencies": {
+    "@types/object-hash": "^2.2.1"
+  }
+}
